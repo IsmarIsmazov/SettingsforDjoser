@@ -1,0 +1,7 @@
+venv
+ismar
+.idea
+__pycache__/
+__pacache__/
+templates
+db.sqlite3
