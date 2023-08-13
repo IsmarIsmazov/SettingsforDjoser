@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'rest_framework',
     'djoser',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -108,9 +109,12 @@ AUTH_PASSWORD_VALIDATORS = [
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'registerdrf@gmail.com'
+EMAIL_HOST_PASSWORD = 'RegisterDjangorestframework'
 EMAIL_PORT = 587
+
+AUTH_USER_MODEL = 'users.User'
+
 
 DJOSER = {
     'PASSWORD_RESET_CONFIRM_URL': '#/password/reset/confirm/{uid}/{token}',
